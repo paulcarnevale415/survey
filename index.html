@@ -31,14 +31,31 @@
             <option>Pasta</option>
           </select>
         </div>
+        <div class="form-group">
+          <label for="music">Do you like music?</label>
+          <div class="radio">
+            <label>
+              <input type="radio" name="music" value="Yes" checked>
+              Yes
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="music" value="No">
+              No
+            </label>
+          </div>
+        </div>
         <button type="submit" class="btn btn-primary">Submit</button>
       </form>
     </div>
+    <br>
     <div id="confirmation">
       <h1>Thank You</h1>
       <p>The following information has been recorded.</p>
       <p>Name: <span class="name"></span></p>
       <p>Food: <span class="food"></span></p>
+      <p>Do you like music? <span class="music"></span></p>
     </div>
   </body>
 </html>

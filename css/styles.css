@@ -1,3 +1,7 @@
 #confirmation {
   display: none;
 }
+
+body {
+  padding: 5%
+}

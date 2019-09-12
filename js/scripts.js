@@ -1,13 +1,12 @@
 $(document).ready(function() {
   $("#blanks form").submit(function(event) {
-    var blanks = ["name", "food"];
 
-    blanks.forEach(function(blank) {
-      var userInput = $("input#" + blank).val();
-      $("." + blank).text(userInput).val();
-      var userInput = $("select#" + blank).val();
-      $("." + blank).text(userInput).val();
-    });
+      var userInputName = $("input#name").val();
+      $(".name").text(userInputName).val();
+      var userInputFood = $("select#food").val();
+      $(".food").text(userInputFood).val();
+      var userInputMusic = $("input:radio[name=music]:checked").val();
+      $(".music").text(userInputMusic).val();
 
     $("#confirmation").show();
 
