@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="js/scripts.js"></script>
+
+    <title>Survey</title>
+  </head>
+  <body>
+    <h1>Survey</h1>
+    <div id="blanks">
+      <form>
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" class="form-control" id="name" placeholder="Enter name">
+        </div>
+        <div class="form-group">
+          <label for="food">Pick a favorite food</label>
+          <select class="form-control" id="food">
+            <option>Burrito</option>
+            <option>Protein Bowl</option>
+            <option>Salad</option>
+            <option>Pasta</option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+    <div id="confirmation">
+      <h1>Thank You</h1>
+      <p>The following information has been recorded.</p>
+      <p>Name: <span class="name"></span></p>
+      <p>Food: <span class="food"></span></p>
+    </div>
+  </body>
+</html>
